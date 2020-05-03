@@ -56,6 +56,7 @@ if(i>0){
     discharge_Difference = discharge - jsonObject['transition']['discharged'][i-1][3] - jsonObject['transition']['discharged'][i-1][4];
 }
 yeatMonthDay = ''+jsonObject['transition']['carriers'][i][0]+month+day;
+console.log(yeatMonthDay+","+Infected+","+jsonObject['transition']['cases'][i][3]+","+discharge+","+deceased+","+serious+","+infected_Person_Difference+","+patient_Difference+","+discharge_Difference+","+deceased_Difference+","+severely_ill_Difference);
 result.push([yeatMonthDay, Infected, jsonObject['transition']['cases'][i][3], discharge, deceased, serious, infected_Person_Difference, patient_Difference, discharge_Difference, deceased_Difference, severely_ill_Difference]);
 
 }
